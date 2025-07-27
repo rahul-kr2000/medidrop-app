@@ -1,0 +1,70 @@
+/* Container Layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left Side with Graphic */
+.login-graphic {
+  flex: 1;
+  background: url('https://cdn-icons-png.flaticon.com/512/387/387561.png') no-repeat center;
+  background-size: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right Side with Form */
+.login-card {
+  flex: 1;
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+.login-card input,
+.login-card select {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Button Styling */
+.login-card button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-card button:hover {
+  background: #0056b3;
+}
