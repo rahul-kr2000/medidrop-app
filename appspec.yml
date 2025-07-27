@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
  - source: /
-   destination: /home/ec2-user/node-aws-pipeline
+   destination: /home/ubuntu/react-app-pipeline
 hooks:
  AfterInstall:
  - location: scripts/after_install.sh
