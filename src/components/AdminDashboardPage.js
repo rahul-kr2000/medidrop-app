@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import config from './config.json';
 import './AdminDashboardPage.css';
 
+
+// oxlint-disable-next-line no-unused-vars
 const AdminDashboard = ({  onLogout, userId , role, username }) => {
   const [showModal, setShowModal] = useState(false);
   const [users, setUsers] = useState([]);
@@ -14,7 +16,7 @@ const AdminDashboard = ({  onLogout, userId , role, username }) => {
     role: 'Admin', 
     password: ''
   });
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });

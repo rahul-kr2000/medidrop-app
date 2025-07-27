@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './Dashboard.css';
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
+// import axios from 'axios';
 import config from './config.json';
 import { format } from 'date-fns';
 
@@ -36,6 +36,7 @@ const Dashboard = ({ onLogout, userId , role, username}) => {
     if (userId) {
       fetchRecords();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userId]);
 
   const handleUpload = () => {    
@@ -118,9 +119,22 @@ const Dashboard = ({ onLogout, userId , role, username}) => {
               <p>
                 {record.testtype} = {record.value} {record.unit} <br/>
                 Date : {format(new Date(record.uploadedat), 'MMMM d, yyyy')} <br/>
-                <a href="#" onClick={() => handleDownload(record.s3key)} rel="noopener noreferrer">
+                <button
+                  type="button"
+                  className="link-button"
+                  onClick={() => handleDownload(record.s3key)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: "blue",
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                    padding: 0,
+                    font: "inherit"
+                  }}
+                >
                   ⬇️ Download
-                </a>
+                </button>
               </p>
               <button className="delete-button" onClick={() => handleDelete(record.docid)}>🗑️</button>
             </div>

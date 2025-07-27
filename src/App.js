@@ -14,9 +14,9 @@ function App() {
 
   useEffect(() => {
     const storedAuth = localStorage.getItem("isAuthenticated");
-    const storedUserId = localStorage.getItem("userId");
-    const role = localStorage.getItem("role");
-    const name = localStorage.getItem("name");
+    // const storedUserId = localStorage.getItem("userId");
+    // const role = localStorage.getItem("role");
+    // const name = localStorage.getItem("name");
     if (storedAuth === "true") {
       setIsAuthenticated(true);
     }
