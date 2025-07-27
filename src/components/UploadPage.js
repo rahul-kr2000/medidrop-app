@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import axios from 'axios';
+// import axios from 'axios';
 import './UploadPage.css';
 import config from './config.json';
 
+// oxlint-disable-next-line no-unused-vars
 const UploadPage = ({ userId }) => {
   const [document, setDocument] = useState(null);
   const [loading, setLoading] = useState(false);
