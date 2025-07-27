@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
+// import axios from 'axios';
 import './LoginPage.css';
 import config from './config.json';
 
 const LoginPage = ({ onLogin }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [role, setRole] = useState("patient");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [role, setRole] = useState("patient");
 
   const navigate = useNavigate();
 
