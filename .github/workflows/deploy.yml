@@ -39,4 +39,4 @@ jobs:
 
     - name: Invalidate CloudFront cache
       run: |
-        aws cloudfront create-invalidation --distribution-id "react_app" --paths "/*"
+        aws cloudfront create-invalidation --distribution-id "E2XVFW7LEE6P8T" --paths "/*"
