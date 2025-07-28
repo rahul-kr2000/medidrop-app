@@ -49,7 +49,7 @@ const LoginPage = ({ onLogin }) => {
       <div className="login-graphic"></div>
 
       <div className="login-card">
-        <h2>Login Here</h2>      
+        <h2>You can Login Here</h2>      
         <input
           type="text"
           placeholder="Username"

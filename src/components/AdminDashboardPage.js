@@ -107,7 +107,7 @@ const handleDeleteUser = async (userid) => {
 
       <div className="user-cards-container">
         {loading ? (
-          <p>Loading...</p>
+          <p>Loading....</p>
         ) : users.length === 0 ? (
           <p>No users found.</p>
         ) : (
